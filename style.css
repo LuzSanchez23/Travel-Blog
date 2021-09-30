@@ -1,9 +1,18 @@
 body {
     text-align: center;
-    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(blue, white);
+    font-family: 'Gluten', cursive;
 }
-
-
+h1 {
+    font-size: 50px;
+    
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 30px;
+}
 img {
     min-width: 100%;
     min-height: 100%;
@@ -84,4 +93,24 @@ align-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
+}
+.flexnine {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.flexten {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.flexeleven {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.flextwelve {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.flexthirteen {
+    flex-grow: 0;
+    flex-shrink: 1;
 }
