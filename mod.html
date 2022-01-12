@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .city {
+            font-family: cursive;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is all Created with Js...</h1>
+
+    <script>
+
+        var body = document.body;
+        var newImg = document.createElement('img');
+        newImg.src = 'https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_750,q_60,w_800/v1/clients/lasvegas/strip4_89c32e94-f471-4162-aa4c-a18b84c73ba6.jpg';
+        newImg.style.border = "5px dotted pink";
+        newImg.style.height = "250px";
+        newImg.style.width = "300px";
+        body.appendChild(newImg);
+        body.style.backgroundColor = "pink";
+        body.scrollTop = 50;
+
+        var newhead = document.createElement('h1');
+        var newheadText = document.createTextNode("Vegas");
+        newhead.appendChild(newheadText);
+        newhead.className = "city";
+        newhead.style.color = "teal";
+        body.appendChild(newhead);
+
+        var newParagraph = document.createElement('p');
+        var newText = document.createTextNode('What happened in Vegas, Stays in Vegas')
+        newParagraph.appendChild(newText);
+        newParagraph.style.color = "purple";
+        newParagraph.style.border = "6px dotted white";
+        newParagraph.style.width = "80%";
+        newParagraph.style.textAlign = "center";
+        body.appendChild(newParagraph);
+
+        var newhead2 = document.createElement('h2');
+        var newheadText2 = document.createTextNode("Cast");
+        newhead2.appendChild(newheadText2);
+        body.appendChild(newhead2);
+        "<br>"
+
+        var cast = [
+            {
+                Character: 'Tweety',
+                movie: 'Looney Tunes',
+                isInOne: true
+            },
+            {
+                Character: 'Taz',
+                movie: 'Looney Tunes',
+                isInOne: false 
+            },
+            {
+                Character: 'Bunny',
+                movie: 'Looney Tunes',
+                isInOne: true 
+            },
+            {
+                Character: 'Jordan',
+                movie: 'Looney Tunes',
+                isInOne: false 
+            }
+        ];
+
+        for (var i = 0; i <cast.length; i++) {
+            var bookP = document.createElement('p');
+            var bookDescription = document.createTextNode(cast[i].Character + ' played by ' + cast[i].movie + ' was in the original ' + cast[i].isInOne);
+            bookP.appendChild(bookDescription);
+            bookP.style.color = "blue";
+            bookP.style.fontSize = "23px";
+            document.body.appendChild(bookP);
+        }
+    </script>
+
+</body>
+
+</html>
